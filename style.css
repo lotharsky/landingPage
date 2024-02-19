@@ -1,0 +1,153 @@
+:root {
+    --DarkBackground: #1F2937;
+    --mainTextColor: #F9FAF8;
+    --MainTextSize: 48px;
+    --SecondaryTextColor: #E5E7EB;
+    --SecondaryTextSize: 18px;
+    --HeaderLogoSize: 24px;
+    --ButtonColor: #3882F6;
+    --InformationHeaderTextColor: #1F2937;
+    --InformationHeaderTextSize: 36px;
+    --QuoteSectionBackground: #E5E7EB;
+    --QuoteTextColor: #1F2937;
+    --QuoteTextSize: 36px; 
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--DarkBackground);
+    padding: 10px 0px 10px 0px;
+}
+
+.header_logo {
+    font-size: var(--HeaderLogoSize);
+    font-weight: 700;
+}
+
+.nav_links {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+a {
+    color: var(--mainTextColor);
+    text-decoration: none;  
+}
+
+/* Header */
+.image_placeholder {
+    background-color: #7f858d;
+    padding: 10vh 15vh 10vh 15vh;
+    text-align: center;
+    color: var(--SecondaryTextColor);
+}
+
+#Banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--DarkBackground);
+    /* gap: 10%; */
+    height: 40vh;
+}
+
+.Banner_Title {
+    font-size: var(--MainTextSize);
+    color: var(--mainTextColor);
+}
+
+.Sign_up_button {
+    background-color: var(--ButtonColor);
+    color: var(--mainTextColor);
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 1vh 0vh 0vh 0vh;
+
+}
+
+.Banner_text {
+    font-size: var(--SecondaryTextSize);
+    color: var(--SecondaryTextColor);
+    width: 35vh;
+}
+
+/* Section Random information */
+#RandomInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.Text_Random_Info {
+    margin: 50px 0 50px 0;
+    color: var(--InformationHeaderTextColor);
+    font-size: var(--InformationHeaderTextSize);
+}
+
+.ImagesAndSubtext {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.IMGSUB {
+    text-align: center;
+}
+
+.IMG1 {
+    width: 200px;
+    height: 200px;
+    outline: 2px solid #3882F6;
+    border-radius: 15px;
+}
+
+.Sub {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Section Quote */
+#Quote {
+    background-color: var(--QuoteSectionBackground);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Quote_text {
+    font-size: var(--InformationHeaderTextSize);
+    color: var(--QuoteTextColor);
+    font-style: italic;
+    margin: auto;
+    margin-bottom: 0;
+    width: 70%;
+    /* border: solid #1F2937; */
+    padding: 10px;
+}
+
+.Quote_author {
+    font-size: 20px;
+    color: var(--QuoteTextColor);
+    font-weight: bold;
+    text-align: right;
+    margin: auto;
+    margin-top: 0;
+    width: 70%;
+    /* border: solid #1F2937; */
+    padding: 10px;
+}
