@@ -68,8 +68,9 @@ a {
     color: var(--mainTextColor);
 }
 
-.Sign_up_button {
+.Sign_up_button, .CTA_button{
     background-color: var(--ButtonColor);
+    border-color: var(--ButtonColor);
     color: var(--mainTextColor);
     width: 120px;
     height: 40px;
@@ -150,4 +151,52 @@ a {
     width: 70%;
     /* border: solid #1F2937; */
     padding: 10px;
+}
+
+/* Call to Action */
+
+#CTA {
+    height: 35vh;
+    display: flex;
+}
+
+.container_CTA {
+
+    background-color: var(--ButtonColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    border-radius: 10px;
+    height: 120px;
+}
+
+.CTA_button {
+    border-color: var(--QuoteSectionBackground);
+}
+
+.CTA_head_text {
+    color: var(--mainTextColor);
+}
+
+.CTA_second_text {
+    color: var(--SecondaryTextColor);
+} 
+
+/* Copyright section */
+#Copyright {
+    height: 6vh;
+    background-color: var(--DarkBackground);
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+}
+
+.Copyright_text {
+    color: var(--SecondaryTextColor);
+    font-size: large;
+    text-align: center;
+    padding-top: 2vh;
+    font-style: italic ;
 }
